@@ -1,0 +1,231 @@
+/* reset */
+*{
+	margin:0;
+	padding:0;
+	outline:0;
+}
+img {
+	border: 0;
+}
+.clear {
+	clear: both;
+}
+.line {
+	clear: both;
+	padding: 15px 0 0;
+	margin: 0 0 25px;
+	border-bottom: 1px solid #ddd;
+}
+
+body {
+	font: .8em Arial, Verdana, Tahoma, Sans-Serif;
+	background: asset-url('bgtile.jpg') repeat-x;
+	color: #555;
+}
+
+/* typography and links */
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+p  {
+	margin: 0 0 17px;
+	line-height: 1.6em;
+}
+
+/* headings */
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+h1 {
+	float: left;
+	font-size: 2.1em;
+	color: #fff;
+	letter-spacing: -1.4px;
+	margin: 0 0 30px 0;
+	padding: 34px 0 0 10px;
+}
+h1 a {
+	color: #fff;
+}
+h2 {
+	margin: 0 0 15px;
+	font-size: 1.9em;
+	color: #000;
+}
+h2.inner {
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 25px;
+	padding: 0 0 10px;
+}
+h3 {
+	margin: 0 0 7px;
+	font-size: 1.3em;
+	clear: both;
+	color: #000;
+	line-height: 1.3em;
+}
+h4 {
+	margin: 0 0 10px;
+	font-size: 1.2em;
+	color: #000;
+}
+h5 {
+	font-size: 1em;
+	color: #eee;
+	margin: 0 0 14px;
+}
+
+#bg {
+	background: url('bg.jpg') no-repeat center top;
+}
+
+/* content holder */
+.wrap {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* menu */
+#mainmenu {
+	float: right;
+	padding: 39px 0 0;
+}
+#menu ul {
+	float: right;
+}
+#menu li {
+	display: inline;
+	float: left;
+	margin: 0 0 0 18px;
+}
+#menu li a {
+	display: block;
+	color: #999;
+	padding: 7px;
+	font-size: 1.1em;
+	border: 1px solid transparent;
+}
+#menu a:hover, #menu li.current a {
+	border-color: #444;
+}
+#menu li ul {
+	top: 98px;
+	background: url('dot.png');
+	padding: 3px;
+	font-size: .92em;
+	position: absolute;
+	display: none;
+	z-index: 100;
+}
+#menu li ul li {
+	float: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	clear: left;
+}
+
+#menu li ul li a {
+	color: #fff;
+	margin: 4px;
+	white-space: nowrap;
+	padding: 8px;
+}
+#menu li ul li a:hover {
+	background: #2C2D2F;
+	border-color: #2C2D2F;
+}
+
+/* pitch slideshow */
+#pitch {
+	clear: both;
+	height: 296px;
+	background: url('shadow.png') no-repeat left bottom;
+	margin: 0 0 25px;
+}
+#slideshow {
+    position:relative;
+    height: 310px;
+}
+#slideshow img {
+	float: left;
+}
+#slideshow div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+#slideshow div.active {
+    z-index: 10;
+}
+#slideshow div.last-active {
+    z-index: 9;
+}
+#zoom {
+	z-index: 11;
+}
+
+/* pitch overlay */
+.overlay {
+	clear: both;
+	float: left;
+	z-index: 100;
+	position: relative;
+	margin: 100px 0 0;
+}
+.overlay h2{
+	color: #fff;
+	font-size: 2em;
+	background: url('dot.png');
+	padding: 16px;
+	margin: 0;
+	float: left;
+	width: 300px;
+}
+.overlay p {
+	clear: both;
+	background: #fff;
+	padding: 16px;
+	width: 300px;
+}
+
+#slideshow:hover .arrow {
+	background: url('dot.png');
+}
+
+#main {
+	clear: left;
+	float: left;
+	width: 680px;
+	border-right: 1px dotted #ddd;
+	padding: 0 30px 0 0;
+	margin: 0 0 30px;
+}
+
+#intro {
+	padding: 0 0 20px;
+	margin: 0 0 25px;
+	border-bottom: 1px dotted #ddd;
+}
+
+/* holder for page content */
+#page {
+
+}
+.justify {
+	text-align: justify;
+}
+
+/* images align */
+.left {
+	float: left;
+	margin: 0 15px 5px 0;
+}
+.right {
+	float: right;
+	margin: 0 0 5px 15px;
+}
+
